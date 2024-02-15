@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import catLogo from './assets/cat.png'
+// import Header from './page/header.html'
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+    {/* <Route path="/" element = {<Header />} /> */}
       <div>
         <a href="https://vitejs.dev" target="_blank">
         </a>
