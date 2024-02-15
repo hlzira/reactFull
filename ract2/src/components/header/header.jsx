@@ -1,4 +1,5 @@
 import logotype from '/assets/img/logo_light.png'
+import {Link} from 'react-router-dom'
 
 export default function header() {
   return (
@@ -9,14 +10,14 @@ export default function header() {
                     <img src={logotype} alt="" className="header-logo"/>
                 </div>
                 <div className="header-menu">
-                    <a href="" className="header-link">Главная</a>
-                    <a href="" className="header-link">О нас</a>
-                    <a href="" className="header-link">Где нас найти ?</a>
-                    <a href="" className="header-link">Каталог</a>
+                    <Link to="/" className="header-link">Главная</Link>
+                    <Link to="/about" className="header-link">О нас</Link>
+                    <Link to="https://github.com/hlzira/reactFull/tree/main/ract2" className="header-link">GitHub</Link>
+                    <Link to="/catalog" className="header-link">Каталог</Link>
                 </div>
                 <div className="header-buttons">
-                    <a href="" className="header-btn-auth">Вход</a>
-                    <a href="" className="header-btn-reg">Регистрация</a>
+                    <Link to="" className="header-btn-auth">Вход</Link>
+                    <Link to="" className="header-btn-reg">Регистрация</Link>
                 </div>
             </div>
         </div>
