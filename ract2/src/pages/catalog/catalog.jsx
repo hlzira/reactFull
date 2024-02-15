@@ -1,4 +1,22 @@
 import Card from '../../components/card/card'
+const Catalog = [
+    {
+        name:'11111',
+        price:'7 270 ₽',
+    },
+    {
+        name:'2222',
+        price:'17 270 ₽',
+    },
+    {
+        name:'3333L',
+        price:'770 ₽',
+    },
+    {
+        name:'4444',
+        price:'70 ₽',
+    }
+]
 
 export default function catalog() {
   return (
@@ -12,9 +30,11 @@ export default function catalog() {
                 <a href="" className="catalog-filtr-link">Ароматизаторы</a>
             </div>
             <div className="catalog-products">
-                    <Card name="275/45 R20 PIRELLI P-ZERO LUXURY SALOON 110Y RUN FLAT XL" price="7 270 ₽" />
-                    <Card name="275/45 R20 PIRELLI P-ZERO LUXURY SALOON 110Y RUN FLAT XL" price="7 270 ₽" />
-                    <Card name="275/45 R20 PIRELLI P-ZERO LUXURY SALOON 110Y RUN FLAT XL" price="7 270 ₽" />
+                {Catalog.map((c) => {
+                    return(
+                        <Card name={c.name} price={c.price} key={c.name}/>
+                    )
+                })}
             </div>
         </div>
     </div>
