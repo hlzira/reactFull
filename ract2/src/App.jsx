@@ -14,8 +14,8 @@ function App() {
       <Header/>
       <Banner/>
       <Routes>
-        <Route path="/" element = {<Main/>} />
-        <Route path="/catalog" element = {<Catalog/>} />
+        <Route path="/" element = {<Main/>} />{
+        <Route path="/catalog" element = {<Catalog/>} />}
       </Routes>
     </>
   )
